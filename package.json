@@ -1,0 +1,27 @@
+{
+  "name": "my-monorepo-demo",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "start": "concurrently \"pnpm --filter shared dev\" \"pnpm --filter app-one dev\"",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.1.1",
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.0.0",
+    "eslint": "^9.19.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}

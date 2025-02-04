@@ -1,0 +1,16 @@
+{
+  "name": "@my-monorepo-demo/app-one",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@my-monorepo-demo/shared": "workspace:*"
+  }
+}
